@@ -38,7 +38,7 @@ router.delete('/:id', auth, async (req, res) => {
 
 	users = await User.findByIdAndRemove(req.params.id);
 
-	res.send(user);
+	res.send(_user);
 });
 
 module.exports = router;
