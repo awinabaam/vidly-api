@@ -1,5 +1,5 @@
 {
 	"name": "Vidly API",
-	"db-connection-string": "mongodb://localhost/vidly",
+	"db": "mongodb://localhost/vidly",
 	"jwtPrivateKey": ""
 }

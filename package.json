@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"jest":"jest --env=node",
-		"test": "npm run jest"
+		"jest": "jest --env=node --watchAll --verbose --detectOpenHandles --coverage ",
+		"test": "npm run jest "
 	},
 	"keywords": [],
 	"author": "",
@@ -26,6 +26,7 @@
 		"winston-mongodb": "^3.0.0"
 	},
 	"devDependencies": {
-		"jest": "^27.5.1"
+		"jest": "^27.5.1",
+		"supertest": "^3.0.0"
 	}
 }

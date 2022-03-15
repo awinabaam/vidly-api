@@ -1,9 +1,11 @@
 const express = require('express');
 const admin = require('../middleware/admin');
 const auth = require('../middleware/auth');
+const mongoose = require('mongoose');
 
 const router = express.Router();
 const { validate, Genre } = require('../models/genre');
+const validateObjectId = require('../middleware/validateObjectId');
 
 router.get('/', async (req, res) => {
 	const genre = await Genre.find().sort('name');
@@ -11,7 +13,7 @@ router.get('/', async (req, res) => {
 	res.send(genre);
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', validateObjectId, async (req, res) => {
 	const genre = await Genre.findById(req.params.id);
 
 	if (!genre) return res.status(404).send('Genre with specified ID not found');
