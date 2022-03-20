@@ -5,7 +5,11 @@
 	"main": "index.js",
 	"scripts": {
 		"jest": "jest --env=node --watchAll --verbose --detectOpenHandles ",
-		"test": "npm run jest "
+		"test": "npm run jest ",
+		"start": "node index.js"
+	},
+	"engines": {
+		"node": "16.14.2"
 	},
 	"keywords": [],
 	"author": "",
