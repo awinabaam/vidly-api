@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"jest": "jest --env=node --watchAll --verbose --detectOpenHandles --coverage ",
+		"jest": "jest --env=node --watchAll --verbose --detectOpenHandles ",
 		"test": "npm run jest "
 	},
 	"keywords": [],
@@ -20,6 +20,7 @@
 		"joi-objectid": "^4.0.2",
 		"jsonwebtoken": "^8.1.1",
 		"lodash": "^4.17.4",
+		"moment": "^2.20.1",
 		"mongoose": "^5.0.1",
 		"morgan": "^1.10.0",
 		"winston": "^2.4.0",
